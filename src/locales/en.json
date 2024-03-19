@@ -1,0 +1,12 @@
+{
+  "404_NotFound": "NOT FOUND",
+  "films": "Films",
+  "films-path": "Films folder",
+  "games": "Games",
+  "games-path": "Games folder",
+  "home": "Home",
+  "missingDesc": "Overview not found on TMDB",
+  "settings": "Settings",
+  "shows": "Shows",
+  "shows-path": "Shows folder"
+}

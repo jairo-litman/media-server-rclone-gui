@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .sidebar-icon-holder {
+        @apply h-12 w-12 flex self-center items-center justify-self-center justify-items-center
+        bg-neutral-600 rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear
+        cursor-pointer shadow-md shadow-black
+    }
+
+    .sidebar-icon-holder.active {
+        @apply bg-blue-300 rounded-xl
+    }
+
+    .sidebar-icon {
+        @apply h-9 fill-blue-300
+    }
+    
+    .active .sidebar-icon {
+        @apply fill-neutral-600
+    }
+
+    .sidebar-tooltip {
+        @apply absolute left-16 bg-neutral-700 text-white m-2 p-2 cursor-default rounded-xl
+        text-xs scale-0 transition-all duration-100 origin-left ease-in-out shadow-md shadow-black
+        group-hover:scale-100 group-hover:delay-300
+    }
+
+    .card-holder {
+        @apply bg-neutral-700 h-[450px] w-[300px] mx-10 shadow-lg shadow-black rounded-md overflow-hidden relative
+        flex cursor-pointer
+    }
+
+    .card-poster {
+        @apply w-full absolute transition-all group-hover:blur-sm
+    }
+
+    .card-content-gradient {
+        @apply relative w-full h-full self-center group-hover:bg-gradient-to-t from-black via-[#000000a8]
+        transition-all ease-linear flex items-end
+    }
+
+    .card-content {
+        @apply scale-0 group-hover:scale-100 transition-all ease-in w-full
+    }
+}
+
+@layer utilities {
+    body::-webkit-scrollbar {
+        @apply w-2 h-2
+    }
+
+    body::-webkit-scrollbar-track {
+        @apply bg-neutral-800
+    }
+
+    body::-webkit-scrollbar-thumb {
+        @apply bg-neutral-700 rounded-lg
+    }
+}
+
+
+:root {
+    @apply bg-neutral-900;
+}

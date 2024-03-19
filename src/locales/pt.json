@@ -1,0 +1,12 @@
+{
+  "404_NotFound": "NÃO ENCONTRADO",
+  "films": "Filmes",
+  "films-path": "Pasta de filmes",
+  "games": "Jogos",
+  "games-path": "Pasta de jogos",
+  "home": "Início",
+  "missingDesc": "Resumo não encontrada no TMDB",
+  "settings": "Opções",
+  "shows": "Series",
+  "shows-path": "Pasta da séries"
+}
